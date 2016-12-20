@@ -141,12 +141,12 @@ set foldcolumn=1
 " Enable syntax highlighting
 syntax enable 
 
-try
-    colorscheme desert
-catch
-endtry
+"try
+  " colorscheme desert
+"catch
+"endtry
 
-set background=dark
+" set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -184,7 +184,7 @@ set smarttab
 " 1 tab == 4 spaces
 set shiftwidth=2
 set tabstop=2
-
+set softtabstop=4
 " Linebreak on 500 characters
 set lbr
 set tw=500
@@ -328,12 +328,6 @@ map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
 map <leader>n :cn<cr>
 map <leader>p :cp<cr>
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Spell checking
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
 
 " Shortcuts using <leader>
 map <leader>sn ]s

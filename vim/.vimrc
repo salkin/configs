@@ -27,18 +27,18 @@ Plug 'fatih/vim-go'
 "
 Plug 'scrooloose/nerdtree'
 
-Plug 'Shougo/neocomplete'
-
-Plug 'wincent/Command-T'
-
 Plug 'flazz/vim-colorschemes'
-
-Plug 'jiangmiao/auto-pairs'
 
 Plug 'ctrlpvim/ctrlp.vim'
 "Plug 'vim-scripts/taglist'
 
-"
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
+Plug 'vim-scripts/a.vim'
+Plug 'jeetsukumaran/vim-buffergator'
+Plug 'klen/python-mode'
+Plug 'Shougo/neocomplete.vim'
+Plug 'rust-lang/rust.vim'
 " " Add plugins to &runtimepath
 call plug#end()
 
@@ -56,4 +56,12 @@ map <C-n> :NERDTreeToggle<CR>
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 
+let g:jedi#auto_initialization = 1
+let g:NERDTreeWinSize = 30
 
+"Ctags
+set tags=./tags;/
+
+"Omnicomplete
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
