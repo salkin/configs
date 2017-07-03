@@ -14,7 +14,6 @@ map <leader>gt :GoTest<cr>
 
 map <C-l> :bn<cr>
 map <C-d> :bd<cr>
-map <C-space> :GoInfo<cr>
 
 
 ino ii <esc>
