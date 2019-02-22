@@ -21,6 +21,8 @@ call plug#begin('~/.vim/plugged')
 "
 " " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
 Plug 'fatih/vim-go'
+Plug 'mdempsky/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh'  }
+
 "
 " " Plugin options
 " Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
@@ -39,6 +41,9 @@ Plug 'jeetsukumaran/vim-buffergator'
 Plug 'klen/python-mode'
 Plug 'Shougo/neocomplete.vim'
 Plug 'rust-lang/rust.vim'
+Plug 'majutsushi/tagbar'
+Plug 'HansPinckaers/ncm2-jedi'
+
 " " Add plugins to &runtimepath
 call plug#end()
 
@@ -47,7 +52,6 @@ source ~/.vim_runtime/basic.vim
 source ~/.vim_runtime/plugins_config.vim
 source ~/.vim_runtime/extended.vim
 
-"source ~/.vim/plugin/taglist.vim
 source ~/.vim_runtime/my_configs.vim
 
 "Plugins setions nerdtree
