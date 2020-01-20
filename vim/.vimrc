@@ -20,13 +20,14 @@ call plug#begin('~/.vim/plugged')
 " Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 "
 " " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
-Plug 'fatih/vim-go'
 Plug 'mdempsky/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh'  }
-
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  }
 "
 " " Plugin options
 " Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 "
+"
+Plug 'Shougo/deoplete.nvim'
 Plug 'scrooloose/nerdtree'
 
 Plug 'flazz/vim-colorschemes'
@@ -39,10 +40,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'vim-scripts/a.vim'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'klen/python-mode'
-Plug 'Shougo/neocomplete.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'majutsushi/tagbar'
-Plug 'HansPinckaers/ncm2-jedi'
+
+Plug 'goodell/vim-mscgen'
 
 " " Add plugins to &runtimepath
 call plug#end()

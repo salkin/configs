@@ -223,8 +223,6 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" Close the current buffer
-map <leader>bd :Bclose<cr>:tabclose<cr>gT
 
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>
@@ -237,9 +235,6 @@ map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 
 
-
-map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove 
 map <leader>t<leader> :tabnext 
 
 " Let 'tl' toggle between this and the last accessed tab
